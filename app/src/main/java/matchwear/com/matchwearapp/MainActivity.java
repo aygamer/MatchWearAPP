@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
 
                //TAB tab         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-       
+
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         TabLayout tabLayout =(TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.addTab(tabLayout.newTab().setText("Gallery"));
@@ -127,10 +127,13 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
             // Return a PlaceholderFragment (defined as a static inner class below).
             switch (position) {
                 case 0:
+                    default:
                     return new gallery();
                 case 1:
-                default:
                     return new ShoppingCart();
+                case 2:
+                    return new LuetBox();
+
 
 
 
