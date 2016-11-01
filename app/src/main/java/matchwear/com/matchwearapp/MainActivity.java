@@ -47,9 +47,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
 
                //TAB tab         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
+       
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         TabLayout tabLayout =(TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.addTab(tabLayout.newTab().setText("Gallery"));

@@ -7,12 +7,18 @@
              android:paddingRight="@dimen/activity_horizontal_margin"
              android:paddingTop="@dimen/activity_vertical_margin"
              tools:context="matchwear.com.matchwearapp.MainActivity$PlaceholderFragment">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:elevation="2dp"
+        android:text="Gallery"/>
     <TableRow
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
 
         </ListView>
     </TableRow>
